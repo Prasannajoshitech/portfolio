@@ -40,7 +40,7 @@ const useScrollToTop = () => {
           height: 45,
           width: 45,
           borderRadius: 50,
-          right: 50,
+          right: 30,
           bottom: 50,
           display: showScroll ? "flex" : "none",
           padding: 5,

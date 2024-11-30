@@ -38,7 +38,7 @@ function App() {
           </Suspense>
           <AppFooter />
         </Router>
-        {/* <UseScrollToTop /> */}
+        <UseScrollToTop />
       </div>
     </AnimatePresence>
   );

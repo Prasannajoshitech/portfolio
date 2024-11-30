@@ -20,10 +20,10 @@ const ProjectSingle = ({ title, category, image, linked }) => {
         className="h-[200px] border-2 border-yellow-500 overflow-hidden "
       > */}
       <div className="flex flex-col justify-between h-full overflow-hidden ">
-        <div className="h-full overflow-hidden ">
+        <div className="aspect-video	 overflow-hidden ">
           <img
             src={image}
-            className="rounded-t-xl  h-full  object-cover"
+            className="rounded-t-xl    object-cover"
             alt="Single Project"
           />
         </div>
