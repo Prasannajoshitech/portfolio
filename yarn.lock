@@ -477,7 +477,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-proposal-private-property-in-object@npm:^7.16.7":
+"@babel/plugin-proposal-private-property-in-object@npm:^7.16.7, @babel/plugin-proposal-private-property-in-object@npm:^7.21.11":
   version: 7.21.11
   resolution: "@babel/plugin-proposal-private-property-in-object@npm:7.21.11"
   dependencies:
@@ -11526,6 +11526,7 @@ __metadata:
   resolution: "react-tailwindcss-portfolio@workspace:."
   dependencies:
     "@babel/core": "npm:^7.26.0"
+    "@babel/plugin-proposal-private-property-in-object": "npm:^7.21.11"
     "@babel/preset-env": "npm:^7.26.0"
     "@emailjs/browser": "npm:^4.4.1"
     "@tailwindcss/forms": "npm:^0.5.2"
