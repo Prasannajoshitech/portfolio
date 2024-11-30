@@ -3,8 +3,6 @@ import { FiMenu, FiMoon, FiSun, FiX } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import useThemeSwitcher from "../../hooks/useThemeSwitcher";
 import HireMeModal from "../HireMeModal";
-import logoLight from "../../images/logo-light.svg";
-import logoDark from "../../images/logo-dark.svg";
 import { motion } from "framer-motion";
 import Button from "../reusable/Button";
 
@@ -40,7 +38,7 @@ const AppHeader = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       id="nav"
-      className="sm:container sm:mx-auto"
+      className="container mx-auto"
     >
       <div className="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center py-6 ">
         {/* Header menu links and small screen hamburger menu */}
