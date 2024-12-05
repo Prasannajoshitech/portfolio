@@ -1,7 +1,5 @@
 // Import images
-import WebImage1 from "../images/web-project-1.jpg";
-import WebImage2 from "../images/web-project-2.jpg";
-import MobileImage1 from "../images/mobile-project-1.jpg";
+
 import SNBConsultancy from "../img/consultancy.png";
 import hye from "../img/hye.png";
 import pokharauae from "../img/pokharauae.png";
@@ -46,7 +44,7 @@ export const projectsData = [
   {
     id: 5,
     title: "GladStone",
-    category: "Humman Resource Management",
+    category: "HRMS",
     img: gladstone,
     link: "https://admin.domehrms.com/login",
   },

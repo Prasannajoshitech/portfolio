@@ -5,13 +5,6 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 
-const selectOptions = [
-  "E-commerce",
-  "Mobile Application",
-  "UI/UX Design",
-  "Branding",
-];
-
 const HireMeModal = ({ onClose, onRequest }) => {
   const form = useRef();
 
@@ -87,20 +80,15 @@ const HireMeModal = ({ onClose, onRequest }) => {
                   />
                 </div>
                 <div className="mt-6">
-                  <select
+                  <input
                     className="w-full px-5 py-2 border dark:border-secondary-dark rounded-md text-md bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
                     id="subject"
                     name="subject"
                     type="text"
                     required=""
-                    aria-label="Project Category"
-                  >
-                    {selectOptions.map((option) => (
-                      <option className="text-normal sm:text-md" key={option}>
-                        {option}
-                      </option>
-                    ))}
-                  </select>
+                    placeholder="Subject"
+                    aria-label="Subject"
+                  />
                 </div>
 
                 <div className="mt-6">
