@@ -10,10 +10,10 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const About = lazy(() => import("./pages/AboutMe"));
-const Contact = lazy(() => import("./pages/Contact.jsx"));
+const Contact = lazy(() => import("./pages/Contact"));
 const Home = lazy(() => import("./pages/Home"));
 const Projects = lazy(() => import("./pages/Projects"));
-const ProjectSingle = lazy(() => import("./pages/ProjectSingle.jsx"));
+const ProjectSingle = lazy(() => import("./pages/ProjectSingle"));
 
 function App() {
   return (
