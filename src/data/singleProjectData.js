@@ -16,7 +16,7 @@ export const singleProjectData = {
   ProjectImages: [
     {
       id: 1,
-      title: "Kabul Project Management UI",
+      title: "Kabul Project  UI",
       img: Image1,
     },
     {
