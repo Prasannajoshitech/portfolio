@@ -39,7 +39,7 @@ export const projectsData = [
     title: "Pokhara Motors",
     category: "E-commerce",
     img: pokharauae,
-    link: "https://pokharauae.com/",
+    link: "https://pokharagroup.com/",
   },
   {
     id: 5,
