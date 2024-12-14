@@ -3,6 +3,7 @@ import AppBanner from "../components/shared/AppBanner";
 import ProjectsGrid from "../components/projects/ProjectsGrid";
 import { ProjectsProvider } from "../context/ProjectsContext";
 import Button from "../components/reusable/Button";
+import RecentBlogs from "../components/blog/RecentBlog";
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
           <Button title="More Projects" />
         </Link>
       </div>
+      <RecentBlogs/>
     </div>
   );
 };

@@ -25,9 +25,9 @@ const AppBanner = () => {
           }}
           className="font-general-semibold text-2xl lg:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase"
         >
-          Hi, Iam Prasanna
+         Prasanna
         </motion.h1>
-        <motion.p
+           <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{
@@ -37,7 +37,19 @@ const AppBanner = () => {
           }}
           className="font-general-medium mt-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200"
         >
-          A React Developer & Design Enthusiast
+     A React Developer & Design Enthusiast
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            ease: "easeInOut",
+            duration: 0.9,
+            delay: 0.2,
+          }}
+          className="font-general-medium mt-4 text-base md:text-lg lg:text-xl xl:text-xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200"
+        >
+       I design and develop high-quality React applications that balance sleek functionality with exceptional user experiences.
         </motion.p>
         <motion.div
           initial={{ opacity: 0 }}
