@@ -63,7 +63,7 @@ const RecentBlogs = () => {
       </div>
         
         </div>
-        <div className="gap-4 grid grid-cols-5 md:grid-cols-3 lg:grid-cols-2 pt-10 ">
+        <div className="gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 pt-10 ">
           {blogs?.slice(0, 4)?.map((blog, index) => (
             < motion.div
             ref={ref}
