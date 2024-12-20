@@ -1260,10 +1260,10 @@
   resolved "https://registry.npmjs.org/@emotion/unitless/-/unitless-0.7.5.tgz"
   integrity sha512-OWORNpfjMsSSUBVrRBVGECkhWcULOAJz9ZW8uK9qgxD+87M7jHRcvh/A96XXNhXTLmKcoYSQtBEX7lHMO7YRwg==
 
-"@esbuild/linux-x64@0.24.0":
+"@esbuild/win32-x64@0.24.0":
   version "0.24.0"
-  resolved "https://registry.npmjs.org/@esbuild/linux-x64/-/linux-x64-0.24.0.tgz"
-  integrity sha512-vbutsFqQ+foy3wSSbmjBXXIJ6PL3scghJoM8zCL142cGaZKAdCZHyf+Bpu/MmX9zT9Q0zFBVKb36Ma5Fzfa8xA==
+  resolved "https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.24.0.tgz"
+  integrity sha512-7IAFPrjSQIJrGsK6flwg7NFmwBoSTyF3rl7If0hNUFQU4ilTsEPL6GuMuU9BfIWVVGuRnuIidkSMC+c0Otu8IA==
 
 "@eslint-community/eslint-utils@^4.2.0":
   version "4.4.1"
@@ -1713,15 +1713,10 @@
     estree-walker "^1.0.1"
     picomatch "^2.2.2"
 
-"@rollup/rollup-linux-x64-gnu@4.28.0":
+"@rollup/rollup-win32-x64-msvc@4.28.0":
   version "4.28.0"
-  resolved "https://registry.npmjs.org/@rollup/rollup-linux-x64-gnu/-/rollup-linux-x64-gnu-4.28.0.tgz"
-  integrity sha512-Nl4KIzteVEKE9BdAvYoTkW19pa7LR/RBrT6F1dJCV/3pbjwDcaOq+edkP0LXuJ9kflW/xOK414X78r+K84+msw==
-
-"@rollup/rollup-linux-x64-musl@4.28.0":
-  version "4.28.0"
-  resolved "https://registry.npmjs.org/@rollup/rollup-linux-x64-musl/-/rollup-linux-x64-musl-4.28.0.tgz"
-  integrity sha512-eKpJr4vBDOi4goT75MvW+0dXcNUqisK4jvibY9vDdlgLx+yekxSm55StsHbxUsRxSTt3JEQvlr3cGDkzcSP8bw==
+  resolved "https://registry.npmjs.org/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.28.0.tgz"
+  integrity sha512-Bvno2/aZT6usSa7lRDL2+hMjVAGjuqaymF1ApZm31JXzniR/hvr14jpU+/z4X6Gt5BPlzosscyJZGUvguXIqeQ==
 
 "@rtsao/scc@^1.1.0":
   version "1.1.0"
@@ -8301,7 +8296,7 @@ react-dev-utils@^12.0.1:
     strip-ansi "^6.0.1"
     text-table "^0.2.0"
 
-"react-dom@^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0", react-dom@^18.0.0, react-dom@^18.1.0, "react-dom@>= 16.8.0", react-dom@>=16.8, "react-dom@>=16.8 || ^17.0.0", react-dom@>=18:
+"react-dom@^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react-dom@^17.0.0 || ^18.0.0 || ^19.0.0", react-dom@^18.0.0, react-dom@^18.1.0, "react-dom@>= 16.8.0", react-dom@>=16.8, "react-dom@>=16.8 || ^17.0.0", react-dom@>=18:
   version "18.3.1"
   resolved "https://registry.npmjs.org/react-dom/-/react-dom-18.3.1.tgz"
   integrity sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==
@@ -8318,6 +8313,11 @@ react-icons@^4.3.1:
   version "4.12.0"
   resolved "https://registry.npmjs.org/react-icons/-/react-icons-4.12.0.tgz"
   integrity sha512-IBaDuHiShdZqmfc/TwHu6+d6k2ltNCf3AszxNmjJc1KUfXdEeRJOKyNvLmAHaarhzGmTSVygNdyu8/opXv2gaw==
+
+react-intersection-observer@^9.14.0:
+  version "9.14.0"
+  resolved "https://registry.npmjs.org/react-intersection-observer/-/react-intersection-observer-9.14.0.tgz"
+  integrity sha512-AYqlmDZn85VUmlODwYym9y5OlqY2cFyIu41dkN0GJWvhdbd19Mh16mz5IH6fO1gp5V4FfQOO4m0zGc04Tj13rQ==
 
 react-is@^16.13.1:
   version "16.13.1"
@@ -8439,7 +8439,7 @@ react-toastify@^10.0.6:
   dependencies:
     clsx "^2.1.0"
 
-react@*, "react@^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0", react@^18.0.0, react@^18.1.0, react@^18.3.1, "react@>= 16", "react@>= 16.3.0", "react@>= 16.8.0", react@>=16.8, "react@>=16.8 || ^17.0.0", react@>=18:
+react@*, "react@^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^17.0.0 || ^18.0.0 || ^19.0.0", react@^18.0.0, react@^18.1.0, react@^18.3.1, "react@>= 16", "react@>= 16.3.0", "react@>= 16.8.0", react@>=16.8, "react@>=16.8 || ^17.0.0", react@>=18:
   version "18.3.1"
   resolved "https://registry.npmjs.org/react/-/react-18.3.1.tgz"
   integrity sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==

@@ -4,6 +4,7 @@ import ProjectsGrid from "../components/projects/ProjectsGrid";
 import { ProjectsProvider } from "../context/ProjectsContext";
 import Button from "../components/reusable/Button";
 import RecentBlogs from "../components/blog/RecentBlog";
+import Contact from "./Contact";
 
 const Home = () => {
   return (
@@ -23,7 +24,13 @@ const Home = () => {
           <Button title="More Projects" />
         </Link>
       </div>
-      <RecentBlogs/>
+      <RecentBlogs />
+      <div className="mt-8 sm:mt-10 text-center overflow-hidden">
+        <h2 className="text-2xl sm:text-4xl font-medium mb-6">
+          Contact Details
+        </h2>
+        <Contact />
+      </div>
     </div>
   );
 };
