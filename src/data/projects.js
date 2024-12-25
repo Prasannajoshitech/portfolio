@@ -29,7 +29,7 @@ export const projectsData = [
   },
   {
     id: 3,
-    title: "shine Consultancy",
+    title: "Shine Consultancy",
     category: "Consultancy",
     img: shine,
     link: "https://www.shineedu.com.np/",
