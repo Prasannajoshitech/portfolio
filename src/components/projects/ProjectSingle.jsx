@@ -6,11 +6,10 @@ const ProjectSingle = ({ title, category, image, linked }) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1, delay: 1 }}
+      animate={{ opacity: 1 }}
       transition={{
         ease: "easeInOut",
-        duration: 0.7,
-        delay: 0.15,
+        duration: 0.5,
       }}
       className="rounded-xl   shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark   overflow-hidden "
     >

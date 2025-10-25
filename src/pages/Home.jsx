@@ -5,6 +5,8 @@ import { ProjectsProvider } from "../context/ProjectsContext";
 import Button from "../components/reusable/Button";
 import RecentBlogs from "../components/blog/RecentBlog";
 import Contact from "./Contact";
+import ContactForm from "../components/contact/ContactForm";
+import ContactDetails from "../components/contact/ContactDetails";
 
 const Home = () => {
   return (
@@ -25,11 +27,14 @@ const Home = () => {
         </Link>
       </div>
       <RecentBlogs />
-      <div className="mt-8 sm:mt-10 text-center overflow-hidden">
+      <div className="mt-8 sm:mt-10 text-center overflow-hidden flex flex-col items-center">
         <h2 className="text-2xl sm:text-4xl font-medium mb-6">
           Contact Details
         </h2>
-        <Contact />
+        <div className="w-full flex flex-col-reverse sm:flex-row gap-2">
+          <ContactForm />
+          <ContactDetails />
+        </div>
       </div>
     </div>
   );

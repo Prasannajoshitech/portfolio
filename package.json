@@ -59,5 +59,6 @@
     "postcss": "^8.4.21",
     "tailwindcss": "^3.0.24",
     "vite": "^6.0.3"
-  }
+  },
+  "packageManager": "pnpm@9.15.4+sha1.ffa0b5c573381e8035b354028ccff97c8e452047"
 }

@@ -33,18 +33,18 @@ const RecentBlogs = () => {
 
   return (
     <motion.div
-      className="p-6 rounded-xl w-full max-w-screen-lg mx-auto text-darkGray my-10"
+      className=" rounded-xl w-full  mx-auto  text-darkGray my-16 "
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
       variants={containerVariants}
       ref={ref}
     >
-      <motion.div className="w-full text-center" variants={titleVariants}>
+      <div className="w-full text-center" variants={titleVariants}>
         <h2 className="text-2xl sm:text-4xl font-medium mb-6">Recent Blogs</h2>
-      </motion.div>
+      </div>
 
       <motion.div
-        className=""
+        className=" "
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
         variants={containerVariants}

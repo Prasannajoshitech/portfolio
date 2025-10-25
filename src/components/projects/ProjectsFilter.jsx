@@ -1,4 +1,12 @@
-const selectOptions = ["E-commerce", "Consultancy", "Travels", "HRMS"];
+const selectOptions = [
+  "E-commerce",
+  "Consultancy",
+  "Travels",
+  "HRMS",
+  "Business",
+  "Government",
+  "Healthcare",
+];
 
 const ProjectsFilter = ({ setSelectProject }) => {
   return (

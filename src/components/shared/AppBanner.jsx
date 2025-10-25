@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 
 const AppBanner = () => {
   const [activeTheme] = useThemeSwitcher();
+  const letters = "A React Developer & Design Enthusiast".split("");
 
   return (
     <motion.section
@@ -23,22 +24,10 @@ const AppBanner = () => {
             duration: 0.9,
             delay: 0.1,
           }}
-          className="font-general-semibold text-2xl lg:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase"
+          className="font-general-semibold text-2xl lg:text-3xl xl:text-4xl text-left lg:text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase"
         >
-         Prasanna
+          Prasanna
         </motion.h1>
-           <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{
-            ease: "easeInOut",
-            duration: 0.9,
-            delay: 0.2,
-          }}
-          className="font-general-medium mt-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200"
-        >
-     A React Developer & Design Enthusiast
-        </motion.p>
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -47,9 +36,37 @@ const AppBanner = () => {
             duration: 0.9,
             delay: 0.2,
           }}
-          className="font-general-medium mt-4 text-base md:text-lg lg:text-xl xl:text-xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200"
+          className="w-full  overflow-hidden flex flex-wrap" // Ensure flex-wrap is enabled
         >
-       I design and develop high-quality React applications that balance sleek functionality with exceptional user experiences.
+          {letters?.map((letter, index) => (
+            <motion.span
+              key={index}
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{
+                delay: index * 0.05,
+                duration: 0.5,
+                ease: [0.42, 0, 0.58, 1],
+              }}
+              className="font-general-medium mt-4 text-lg md:text-xl lg:text-2xl xl:text-3xl w-auto text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200 inline-block"
+            >
+              {letter === " " ? "\u00A0" : letter}
+            </motion.span>
+          ))}
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            ease: "easeInOut",
+            duration: 0.9,
+            delay: 0.2,
+          }}
+          className="font-general-medium mt-4 text-base md:text-lg lg:text-xl xl:text-xl text-left lg:text-center leading-normal text-gray-500 dark:text-gray-200"
+        >
+          I design and develop high-quality React applications that balance
+          sleek functionality with exceptional user experiences.
         </motion.p>
         <motion.div
           initial={{ opacity: 0 }}
@@ -59,7 +76,7 @@ const AppBanner = () => {
             duration: 0.9,
             delay: 0.3,
           }}
-          className="flex justify-center sm:block"
+          className="flex lg:justify-center sm:block"
         >
           <a
             download="Prasanna-Resume.pdf"
@@ -75,10 +92,10 @@ const AppBanner = () => {
         </motion.div>
       </div>
       <motion.div
-        initial={{ opacity: 0, y: -180 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, x: 180 }}
+        animate={{ opacity: 1, x: 0 }}
         transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
-        className="w-full sm:w-2/3 text-right float-right mt-8 sm:mt-0"
+        className="w-full sm:w-2/3 text-right hidden md:flex float-right mt-8 sm:mt-0"
       >
         <img
           src={activeTheme === "dark" ? developerLight : developerDark}

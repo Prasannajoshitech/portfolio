@@ -3,6 +3,8 @@ import { FiSearch } from "react-icons/fi";
 import ProjectSingle from "./ProjectSingle";
 import { ProjectsContext } from "../../context/ProjectsContext";
 import ProjectsFilter from "./ProjectsFilter";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const ProjectsGrid = () => {
   const {
@@ -14,27 +16,28 @@ const ProjectsGrid = () => {
     setSelectProject,
     selectProjectsByCategory,
   } = useContext(ProjectsContext);
-  console.log(projects);
-  return (
-    <section className="py-5 sm:py-10 mt-5 sm:mt-10">
-      <div className="text-center">
-        <p className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">
-          Projects portfolio
-        </p>
-      </div>
+  const [ref, inView] = useInView({ triggerOnce: true });
 
-      <div className="mt-10 sm:mt-16">
+  return (
+    <section className="py-5 sm:py-10 mt-5 sm:mt-10 ">
+      <div className="text-center">
+        <h2 className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">
+          Projects portfolio
+        </h2>
         <h3
           className="font-general-regular 
                         text-center text-secondary-dark
                         dark:text-ternary-light
                         text-md
                         sm:text-xl
-                        mb-3
+                        my-5
                         "
         >
           Search projects by title or filter by category
         </h3>
+      </div>
+
+      <div className="mt-10 mb-5">
         <div
           className="
                         flex
@@ -93,7 +96,10 @@ const ProjectsGrid = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 mt-6 sm:gap-10">
+      <div
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 mt-6 sm:gap-10"
+        ref={ref}
+      >
         {selectProject
           ? selectProjectsByCategory.map((project) => (
               <ProjectSingle
@@ -114,14 +120,25 @@ const ProjectsGrid = () => {
                 linked={project.link || ""}
               />
             ))
-          : projects.map((project) => (
-              <ProjectSingle
-                title={project.title}
-                category={project.category}
-                image={project.img}
+          : projects.map((project, index) => (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={inView && { opacity: 1, delay: 1, y: 0 }}
+                transition={{
+                  ease: "easeInOut",
+                  duration: 0.7,
+                  delay: index * 0.25,
+                }}
                 key={project.id}
-                linked={project.link || ""}
-              />
+              >
+                <ProjectSingle
+                  title={project.title}
+                  category={project.category}
+                  image={project.img}
+                  key={project.id}
+                  linked={project.link || ""}
+                />
+              </motion.div>
             ))}
       </div>
     </section>

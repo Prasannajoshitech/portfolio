@@ -32,7 +32,7 @@ const ContactForm = () => {
           onSubmit={sendEmail}
           className="max-w-xl m-4 p-6 sm:p-10 bg-secondary-light dark:bg-secondary-dark rounded-xl shadow-xl text-left"
         >
-          <p className="font-general-medium text-primary-dark dark:text-primary-light text-2xl mb-8">
+          <p className="font-general-medium text-primary-dark dark:text-primary-light text-xl mb-8">
             Contact Form
           </p>
           <FormInput
