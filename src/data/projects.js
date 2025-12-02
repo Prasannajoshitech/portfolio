@@ -2,6 +2,7 @@
 import SNBConsultancy from "../img/consultancy.png";
 import travelNepal from "../img/travel-nepal.png";
 import dubaiApproval from "../img/dubaiapprovals.png";
+import jobscater from "../img/jobscater.jpg";
 import erc from "../img/erc.png";
 import vatsalya from "../img/vatsalya.png";
 import aakar from "../img/aakar.png";
@@ -13,6 +14,13 @@ import pizzaWorld from "../img/pizza-world.png";
 
 export const projectsData = [
   // 🏢 Priority 1: Dubai Approvals
+  {
+    id: 12,
+    title: "Jobscater",
+    category: "Jobportal",
+    img: jobscater,
+    link: "https://www.jobscater.com/",
+  },
   {
     id: 7,
     title: "Dubai Approvals",

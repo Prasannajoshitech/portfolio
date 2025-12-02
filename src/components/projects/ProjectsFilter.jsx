@@ -6,6 +6,7 @@ const selectOptions = [
   "Business",
   "Government",
   "Healthcare",
+  "Jobportal",
 ];
 
 const ProjectsFilter = ({ setSelectProject }) => {
