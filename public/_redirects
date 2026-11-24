@@ -1,1 +1,2 @@
-/* /index.html 200
+# Prefer real files (prerendered project pages); SPA fallback otherwise
+/*    /index.html   200

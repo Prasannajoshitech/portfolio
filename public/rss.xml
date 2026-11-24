@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Prasanna Joshi — Blog</title>
+    <link>https://prasannajoshi.com.np/blog</link>
+    <description>Practical notes on React, TypeScript, performance, and shipping.</description>
+    <language>en</language>
+    <atom:link href="https://prasannajoshi.com.np/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[Debugging React Re-renders: A Practical Checklist I Use Before Profiling]]></title>
+      <link>https://prasannajoshi.com.np/blog/debugging-react-rerenders</link>
+      <guid>https://prasannajoshi.com.np/blog/debugging-react-rerenders</guid>
+      <pubDate>Mon, 02 Mar 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A practical checklist for finding why a React component re-renders: state placement, unstable props, context, keys and effects, before opening the Profiler.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Building a Small Design System with Tailwind Without Overengineering]]></title>
+      <link>https://prasannajoshi.com.np/blog/tailwind-design-systems</link>
+      <guid>https://prasannajoshi.com.np/blog/tailwind-design-systems</guid>
+      <pubDate>Wed, 18 Feb 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A lean Tailwind design system for React: tokens in the theme, a few typed components with variants, and clear rules for when to stop abstracting.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Accessible React Forms: Labels, Errors, and Focus That Users Notice]]></title>
+      <link>https://prasannajoshi.com.np/blog/accessible-react-forms</link>
+      <guid>https://prasannajoshi.com.np/blog/accessible-react-forms</guid>
+      <pubDate>Thu, 05 Feb 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[Build React forms that work with keyboards and screen readers: real labels, linked error messages, focus on submit, and a reusable TypeScript field.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Building a Scalable Folder Structure for React Apps]]></title>
+      <link>https://prasannajoshi.com.np/blog/scalable-react-folder-structure</link>
+      <guid>https://prasannajoshi.com.np/blog/scalable-react-folder-structure</guid>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A practical React folder structure that stays clear as features, teams, and routes grow—without over-engineering day one.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[How I Build Performant Frontends: A Core Web Vitals Checklist]]></title>
+      <link>https://prasannajoshi.com.np/blog/core-web-vitals-checklist</link>
+      <guid>https://prasannajoshi.com.np/blog/core-web-vitals-checklist</guid>
+      <pubDate>Thu, 08 Jan 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A practical Core Web Vitals checklist for LCP, CLS, and INP—habits I use when shipping React frontends that feel fast.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Next.js vs Vite: How I Choose for Real Projects]]></title>
+      <link>https://prasannajoshi.com.np/blog/nextjs-vs-vite-choosing</link>
+      <guid>https://prasannajoshi.com.np/blog/nextjs-vs-vite-choosing</guid>
+      <pubDate>Mon, 15 Dec 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[How I choose between Next.js and Vite for real projects—routing, SEO, hosting, and when a simpler SPA is the right call.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[React + TypeScript: Patterns for Cleaner, Safer Components]]></title>
+      <link>https://prasannajoshi.com.np/blog/react-typescript-cleaner-components</link>
+      <guid>https://prasannajoshi.com.np/blog/react-typescript-cleaner-components</guid>
+      <pubDate>Fri, 28 Nov 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[TypeScript patterns that keep React components safer and easier to change—props, unions, generics, and avoiding any.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Framer Motion in React: Practical Animation Patterns I Use in Production]]></title>
+      <link>https://prasannajoshi.com.np/blog/framer-motion-production-patterns</link>
+      <guid>https://prasannajoshi.com.np/blog/framer-motion-production-patterns</guid>
+      <pubDate>Wed, 12 Nov 2025 00:00:00 GMT</pubDate>
+      <description><![CDATA[Production Framer Motion patterns: fade-up reveals, reduced motion, staggered heroes, and hover polish without hurting LCP.]]></description>
+    </item>
+  </channel>
+</rss>

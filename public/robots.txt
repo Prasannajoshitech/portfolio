@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://prasannajoshi.com.np/sitemap.xml

@@ -1,10 +1,10 @@
 export const aboutMeData = [
   {
     id: 1,
-    bio: "I'm Prasanna Joshi, a passionate and driven web developer with a strong foundation in HTML, CSS, JavaScript, and React. With an insatiable curiosity for technology and a natural knack for problem-solving, I am continuously exploring the ever-evolving world of web development. My journey has allowed me to work with modern frameworks like Next.js, leveraging its capabilities for Server-Side Rendering (SSR) and Static Site Generation (SSG) to build fast, scalable, and SEO-friendly applications. I also have experience with tools like Postman for API testing and Figma for creating intuitive user interface designs.",
+    bio: "I'm Prasanna Joshi, a software engineer in Lalitpur, Nepal, with about 2.5 years of experience. I spend most of my time on JavaScript, React, and Next.js—building apps that stay fast and easy to maintain. Right now I work at Dome Infosys as a Software Engineer.",
   },
   {
     id: 2,
-    bio: "I have worked with several libraries and tools to enhance my development process, including React Query for efficient server-state management, Redux Toolkit (RTK Query) for handling global state and REST API integration, and Lodash for simplifying complex JavaScript tasks. I utilize Tailwind CSS for streamlined UI styling and Material-UI (MUI) for implementing components with Material Design principles. To optimize application performance, I employ techniques like code splitting to load only the required code. With a commitment to continuous learning, I am dedicated to growing my skills and contributing to impactful projects in the web development field.",
+    bio: "Before that I was an Associate Software Engineer at Kitwosd IT Support Center. My usual stack is TypeScript, Tailwind, MUI or shadcn/ui, React Query / RTK Query, and a bit of Node and MongoDB when the project needs it. I also use Figma, Framer Motion, and Vitest when they fit the job.",
   },
 ];
